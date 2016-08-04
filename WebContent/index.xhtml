@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<h:outputStylesheet library="css" name="bootstrap.css" />
+</h:head>
+
+<body>
+	<h:form class="form-horizontal col-md-4" role="form">
+		<label for="username">UserName </label>
+		<h:inputText type="username" class="form-control"
+			placeholder="Enter username" value="#{user.userName}" />
+         <br />
+		<label for="password">Password </label>
+		<h:inputSecret type="password" class="form-control"
+			placeholder="Enter password" value="#{user.password}" />
+			<br />
+		<h:commandButton action="#{user.logIn}" value="Log In" />
+	</h:form>
+</body>
+</html>
